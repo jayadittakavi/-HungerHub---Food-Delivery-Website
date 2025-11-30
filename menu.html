@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menu | HungerHub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- INTERNAL CSS ADDED -->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, rgba(40, 63, 39, 0.9), rgba(40, 62, 38, 0.9)), 
+        url("C:/Users/jaya/OneDrive/Desktop/hunger hub ( project )/bghome3.jpg");
+      background-color: rgb(237, 250, 237);
+    }
+
+    /* Navbar */
+    .navbar {
+      width: 100%;
+      background: #526d54;
+      color: rgb(237, 250, 237);
+      padding: 15px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .nav-links a {
+      color: rgb(237, 250, 237);
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Section */
+    .main-section {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .main-section h1 {
+      color: #a2c6a4;
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    /* Food Grid */
+    .food-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    /* Food Card */
+    .food-card {
+      background: rgb(237, 250, 237);
+      border-radius: 15px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .food-card:hover {
+      transform: translateY(-5px);
+    }
+    .food-card img {
+      width: 100%;
+      height: 160px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+    .food-card h3 {
+      margin-top: 12px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    .food-card p {
+      margin: 8px 0;
+      font-size: 18px;
+      color: #526d54;
+      font-weight: bold;
+    }
+    .food-card button {
+      background: #526d54;
+      color: rgb(237, 250, 237);
+      border: none;
+      padding: 10px 18px;
+      border-radius: 10px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .food-card button:hover {
+      background: #526d54;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        text-align: center;
+      }
+      .nav-links a {
+        margin: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">HungerHub 🍴</div>
+    <div class="nav-links">
+      <a href="home(userdashboard).html"style="text-decoration: none;">
+        <button style="position: absolute; top: 20px; left: 1200px;background-color: #e9f8ed; color: #26582a; border: none; padding: 8px 19px; border-radius: 6px; margin-right: 20px; cursor: pointer; font-weight: bold;">
+          Home
+        </button>
+      <a href="cart(usercart).html"style="text-decoration: none;">
+        <button style="position: absolute; top: 20px; right: 60px; background-color: #e9f8ed; color: #26582a; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: bold;">
+          Cart
+        </button>
+    </div>
+  </nav>
+
+  <section class="main-section">
+    <h1>Explore Our Menu</h1>
+
+    <div class="food-grid">
+
+      <div class="food-card">
+        <img src="C:/Users/jaya/OneDrive/Desktop/hunger hub ( project )/chicken fry biriyani.jpg" alt="Biriyani">
+        <h3>Chicken Biriyani</h3>
+        <p>₹199</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="food-card">
+        <img src="C:/Users/jaya/OneDrive/Desktop/hunger hub ( project )/black berry cupcake.jpg" alt="Blue berry cake ">
+        <h3>Black berry cupcake</h3>
+        <p>₹99</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="food-card">
+        <img src="C:/Users/jaya/OneDrive/Desktop/hunger hub ( project )/Chicken Wraps.jpg" alt="chiken wraps">
+        <h3>Chicken Wraps</h3>
+        <p>₹159</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="food-card">
+      <img src="C:/Users/jaya/OneDrive/Desktop/hunger hub ( project )/nonveg burger.jpg" alt="Burger">
+      <div class="info">
+        <h3>Juicy Burger</h3>
+        <p>₹199 • 20 min • 4.3★</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="food-card">
+      <img src="C:/Users/jaya/OneDrive/Desktop/hunger hub ( project )/green salad.jpg" alt="Salad">
+      <div class="info">
+        <h3>Fresh Green Salad</h3>
+        <p>₹149 • 15 min • 4.6★</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="food-card">
+      <img src="C:/Users/jaya/OneDrive/Desktop/hunger hub ( project )/choco lava.jpg" alt="Dessert">
+      <div class="info">
+        <h3>Chocolate Lava Cake</h3>
+        <p>₹99 • 10 min • 4.8★</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="food-card">
+      <img src="C:/Users/jaya/OneDrive/Desktop/hunger hub ( project )/chicken fry biriyani.jpg" alt="Chicken Fry Biriyani">
+      <div class="info">
+        <h3>Chicken FryBiriyani(Single)</h3>
+        <p>₹207 • 30 min • 4.3★</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

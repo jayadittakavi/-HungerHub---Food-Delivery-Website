@@ -1,0 +1,81 @@
+<!-- order-confirmation.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Confirmed | HungerHub</title>
+
+  <!-- INTERNAL CSS ADDED -->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f6fff6;
+       background: linear-gradient(to right, rgba(40, 63, 39, 0.9), rgba(40, 62, 38, 0.9)), 
+        url("C:/Users/jaya/OneDrive/Desktop/hunger hub ( project )/bghome3.jpg");
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .confirmation-page {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 450px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      animation: pop 0.6s ease-out;
+    }
+
+    @keyframes pop {
+      0% { transform: scale(0.7); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    h2 {
+      color:  #526d54;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #2c3e50;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      background:  #526d54;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      transition: 0.3s;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+
+    .btn:hover {
+      background:  #526d54;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="confirmation-page">
+    <h2>🎉 Thank you for your order!</h2>
+    <p>Your delicious food is on the way 🚀</p>
+
+    <a href="home(userdashboard).html" class="btn">Back to Home</a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> HungerHub </title>
+  <style>
+    body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: 
+    linear-gradient(to right, rgba(176, 233, 181, 0.7), rgba(199, 230, 201, 0.7)),
+    url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1400&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: opacity 1s ease;
+  }
+    
+    body.fade-out {
+      opacity: 0;
+    }
+
+    .logo-container {
+
+      text-align: center;
+      color: #fff;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .logo-container h1 {
+      font-size: 60px;
+      margin: 0;
+      letter-spacing: 2px;
+      animation: scaleUp 2s ease-in-out;
+    }
+
+    .logo-container p {
+      font-size: 20px;
+      margin-top: 10px;
+      opacity: 0;
+      animation: fadeText 3s ease-in-out forwards;
+      animation-delay: 1.5s;
+    }
+
+    /* Seasoning sparkles */
+    .seasoning {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: #fafdf9;
+      border-radius: 50%;
+      animation: floatUp 5s infinite ease-in-out;
+    }
+
+    .seasoning:nth-child(2) { left: 20%; animation-delay: 0s; }
+    .seasoning:nth-child(3) { left: 40%; animation-delay: 1s; }
+    .seasoning:nth-child(4) { left: 60%; animation-delay: 2s; }
+    .seasoning:nth-child(5) { left: 80%; animation-delay: 3s; }
+    .seasoning:nth-child(6) { left: 50%; animation-delay: 4s; }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes scaleUp {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes fadeText {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes floatUp {
+      from { bottom: -10px; opacity: 0; }
+      to { bottom: 100vh; opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <body bgcolor = "#dcf1dc" class="welcome-page">
+    
+<style>
+  .img{
+    height: 400px;
+    width: 400px;
+    border-style: dotted dotted dotted dotted;
+    border-radius: 400px 400px 400px 400px;
+  }
+</style>
+  <div class="container"><br><br>
+    <center><img src="C:/Users/jaya/OneDrive/Desktop/hunger hub ( project )/Hunger hub.png" alt="Delivery Guy" class="img"></center><br><br>
+    <center><h1><strong> Welcome to HungerHub</strong></h1></center>
+    <center><h2><em>"Delicious , Food delivered fast "</em></h2></center><br>
+  </div>
+  <!-- seasoning sparkles -->
+  <div class="seasoning"></div>
+  <div class="seasoning"></div>
+  <div class="seasoning"></div>
+  <div class="seasoning"></div>
+  <div class="seasoning"></div>
+
+  <script>
+    // Fade out before redirect
+    setTimeout(() => {
+      document.body.classList.add("fade-out");
+      setTimeout(() => {
+        window.location.href = "2welcome.html"; // Home page file
+      }, 1000); // wait for fade-out
+    }, 4000); // show logo for 4 seconds
+  </script>
+</body>
+</html>

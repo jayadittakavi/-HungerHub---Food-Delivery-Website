@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cart | HungerHub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- INTERNAL CSS ADDED BASED ON YOUR TEMPLATE -->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+       background: linear-gradient(to right, rgba(40, 63, 39, 0.9), rgba(40, 62, 38, 0.9)), 
+        url("C:/Users/jaya/OneDrive/Desktop/hunger hub ( project )/bghome3.jpg");
+      background-size: cover;
+      background-color: rgb(237, 250, 237);
+    }
+
+    /* Navbar */
+    .navbar {
+      width: 100%;
+      background: #526d54;
+      color: rgb(237, 250, 237);
+      padding: 15px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .nav-links a {
+      color:rgb(237, 250, 237);
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Section */
+    .main-section {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .main-section h1 {
+      font-size: 32px;
+      color: rgb(237, 250, 237);
+      margin-bottom: 25px;
+    }
+
+    /* Cart Items */
+    .cart-items {
+      max-width: 800px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Food Card */
+    .food-card {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: rgb(237, 250, 237);
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: left;
+      transition: transform 0.2s;
+    }
+
+    .food-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .food-card img {
+      width: 110px;
+      height: 110px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .food-card h3 {
+      font-size: 20px;
+      margin: 0;
+      color: #2c3e50;
+    }
+
+    .food-card p {
+      margin: 6px 0 0 0;
+      font-size: 18px;
+      color: #526d54;
+      font-weight: bold;
+    }
+
+    /* Total */
+    h3 {
+      color: #2c3e50;
+      font-size: 22px;
+      margin-top: 20px;
+    }
+
+    /* Button */
+    .btn {
+      margin-top: 20px;
+      background: #526d54;
+      color: rgb(237, 250, 237);
+      border: none;
+      font-size: 16px;
+      padding: 12px 25px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+
+    .btn:hover {
+      background: #526d54;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .food-card {
+        flex-direction: column;
+        text-align: center;
+      }
+      .food-card img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">HungerHub 🍴</div>
+    <div class="nav-links">
+      <a href="menu.html"style="text-decoration: none;">
+        <button style="position: absolute; top: 20px;  left: 1200px;background-color: #e9f8ed; color: #26582a; border: none; padding: 8px 19px; border-radius: 6px; margin-right: 20px; cursor: pointer; font-weight: bold;">
+          Menu
+          </button>
+      <a href="checkout.html"style="text-decoration: none;">
+        <button style="position: absolute; top: 20px; right: 40px; background-color: #e9f8ed; color: #26582a; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: bold;">
+          Checkout
+        </button>
+    </div>
+  </nav>
+
+  <section class="main-section">
+    <h1>Your Cart</h1>
+
+    <div class="cart-items">
+      <div class="food-card">
+        <img src="C:/Users/jaya/OneDrive/Desktop/hunger hub ( project )/nonveg burger.jpg" alt="Burger">
+        <div>
+          <h3>Non Veg Burger</h3>
+          <p>₹179 • 25 min • 4.5★</p>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="C:/Users/jaya/OneDrive/Desktop/hunger hub ( project )/mini corn pizzas.jpg" alt="pizza">
+        <div>
+          <h3>mini corn pizza</h3>
+          <p>₹249 • 20 min • 4.8★</p>
+        </div>
+      </div>
+    </div>
+
+    <h3>Total: ₹328</h3>
+
+    <a href="checkout.html">
+      <button class="btn">Proceed to Checkout</button>
+    </a>
+  </section>
+
+</body>
+</html>

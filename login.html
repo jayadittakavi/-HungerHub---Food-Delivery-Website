@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | HungerHub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-left"><br><br><br><br>
+     <center><p><h2>Login to order your favorite food!</p></h2></center>
+      <form onsubmit="return validateLogin()" action="home(userdashboard).html">
+        <center><input type="email" id="loginEmail" placeholder="Email address" required></center><br>
+        <center><input type="password" id="loginPassword" placeholder="Password" required /></center><br>
+        <center><button type="submit" class="btn">Login</button></center>
+      </form>
+      <center><p class="redirect-text">Don't have an account?<a href="signup(page).html">Sign up now</a></p></center>
+    </div>
+    <div class="login-right">
+      <img src="C:/Users/jaya/OneDrive/Desktop/hunger hub ( project )/8159cc1bb0ddd8808dbd1a1becaa4bbd.jpg"alt="Delicious Food" />
+    </div>
+  </div>
+  <script src="hungerhub.js"></script>
+</body>
+</html>

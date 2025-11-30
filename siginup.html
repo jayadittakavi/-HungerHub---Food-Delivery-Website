@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up | HungerHub</title>
+  <link rel="stylesheet" href="signup.css" />
+</head>
+<body>
+
+  <div class="signup-container">
+    <div class="signup-box">
+      <h2>Create Account</h2>
+      <p>Sign up to start ordering delicious food 🍕</p>
+
+      <form onsubmit="return validateSignup()" action="otp-verification.html">
+        <input type="text" id="name" placeholder="Full Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="tel" id="phone" placeholder="Phone Number" pattern="[0-9]{10}" required />
+        
+        <div class="password-field">
+          <input type="password" id="password" placeholder="Password" required />
+          <span onclick="togglePassword()" class="toggle-btn">👁️</span>
+        </div>
+
+        <button type="submit" class="btn">Sign Up</button>
+      </form>
+
+      <p class="bottom-text">Already have an account? <a href="sign in.html">Sign in</a></p>
+    </div>
+  </div>
+
+  <script src="signup.js"></script>
+</body>
+</html>
